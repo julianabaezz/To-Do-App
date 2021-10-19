@@ -1,14 +1,20 @@
 import React from 'react';
-import 'bootswatch/dist/quartz/bootstrap.min.css'
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import 'bootswatch/dist/sketchy/bootstrap.min.css'
 import {Login, Dashboard} from './pages'
 
 
 function App() {
   return (
-    <div>
-      <Login/>  
-      <Dashboard/>  
-    </div>
+    <BrowserRouter> 
+      <Switch> 
+        <Route path='/login' component={ Login } />
+        <Route path='/' component={ Dashboard }/> 
+  
+      </Switch> 
+    </BrowserRouter> 
+        
+
   );
 }
 
