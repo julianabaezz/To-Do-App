@@ -13,3 +13,9 @@ export type Task ={
     startDate: Date;
     endDate?: Date;
 }
+
+export type Payload = {
+    email: string,
+    password: string,
+    name: string,
+}

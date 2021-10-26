@@ -1,10 +1,6 @@
 import {api} from '../../../utils/index';
+import { Payload } from '../../../types';
 
-type Payload = {
-    email: string,
-    password: string,
-    name: string,
-}
 
 const signUp = async (data: Payload) => {
     await api.post('/users.json', data)

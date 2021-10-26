@@ -1,4 +1,5 @@
 import { FC, FormEvent, useState } from "react"
+import { Layout } from "../../components/layout/Layout";
 import { signUp } from "./api";
 
 const SignUp: FC = () => {
@@ -15,6 +16,7 @@ const SignUp: FC = () => {
     console.log(email, password, name)
     
     return(
+        <Layout>
         <form action="" onSubmit={handleSubmit} className= "container">
             <legend>Sign Up</legend>
             <div className="form-group row">
@@ -31,6 +33,7 @@ const SignUp: FC = () => {
             </div>
             <button type="submit" className="btn btn-primary mt-4">Save</button>
         </form>
+        </Layout>
     )
 }
 
