@@ -1,7 +1,7 @@
-import { FormEvent } from "react"
+import { FC, FormEvent } from "react"
 import { Layout } from "../../components/layout/Layout";
 
-const Login = () =>{
+const Login: FC = () =>{
     
     const handleSubmit =(e:FormEvent) =>{
         e.preventDefault();
