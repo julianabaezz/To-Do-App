@@ -1,6 +1,7 @@
 import { api } from "../utils";
 import { Task } from "../types";
-import { mapToArray } from ".";
+import { mapToArray } from "../hooks/mapToArray";
+
 
 // const postTasks = () =>{
 //     const post = api.post("/tasks.json")

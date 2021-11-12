@@ -10,7 +10,7 @@ const Users = () => {
     const obtainUsers = async () => {
 
         const response = await getUsers();
-        console.log(response)
+        // console.log(response)
 
         setUsers(response)
 
@@ -28,7 +28,7 @@ const Users = () => {
             <div>
                 {
                     users?.map(user => {
-                        console.log(user)
+                        // console.log(user)
                         return (
 
                             <ul>

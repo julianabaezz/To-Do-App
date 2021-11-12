@@ -27,7 +27,7 @@ const Dashboard = () => {
             <div>
                 {
                     tasks?.map(task => {
-                        console.log(task)
+                        // console.log(task)
                         return (
 
                             <div className="card border-primary mb-3">

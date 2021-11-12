@@ -2,7 +2,7 @@ export type User ={
     id: string;
     name: string;
     email: string;
-    pass: string;
+    password: string;
 };
 
 export type Task ={
@@ -14,8 +14,4 @@ export type Task ={
     endDate?: Date;
 }
 
-export type Payload = {
-    email: string,
-    password: string,
-    name: string,
-}
+export type Payload = Omit <User, 'id'>
