@@ -21,7 +21,7 @@ const Login: FC = () =>{
             localStorage.setItem('user', JSON.stringify(response))
             push('/') 
         } catch(e){
-            console.log(e)
+            // console.log(e)
         }
     } 
 

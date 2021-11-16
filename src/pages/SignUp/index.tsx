@@ -9,9 +9,6 @@ const defaultValues = {
 }
 
 const SignUp: FC = () => {
-    // const [email, setEmail] = useState<string>('');
-    // const [password, setPassword] = useState<string>('');
-    // const [name, setName] = useState<string>('');
     const [input, setInputs] = useState(defaultValues)
 
     const handleSubmit = (e:FormEvent) =>{

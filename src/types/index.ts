@@ -6,12 +6,13 @@ export type User ={
 };
 
 export type Task ={
-    user: string;
+    id: string;
+    user?: string;
     title: string;
     description: string;
-    date: Date;
-    startDate: Date;
-    endDate?: Date;
+    startDate: string;
+    endDate?: string;
+    state: string
 }
 
 export type Payload = Omit <User, 'id'>
