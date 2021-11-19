@@ -1,4 +1,4 @@
-import { getTasks } from './tasks'
-export{getTasks}
+
+export{getTasks, deleteTask} from './tasks'
 
 export {getUsers } from './users'

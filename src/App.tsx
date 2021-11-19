@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route } from 'react-router-dom';
 import 'bootswatch/dist/sketchy/bootstrap.min.css'
 import {Login, Dashboard, Tasks, SignUp, Users} from './pages'
+import './app.css'
 // import { api } from './utils'
 
 function App() {

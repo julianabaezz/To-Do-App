@@ -12,5 +12,9 @@ const getTasks = async (): Promise<Task[]> =>{
 
     return mapToArray(response.data);
 }
+const deleteTask = async (id:string) =>{
+    
+    return await api.delete(`tasks/${id}.json`)
+}
 
-export {getTasks}
+export {getTasks, deleteTask}

@@ -1,4 +1,5 @@
 import { FC, FormEvent, useState } from "react"
+import { useHistory } from "react-router"
 import { Layout } from "../../components/layout/Layout"
 import { addTasks } from "./api"
 
@@ -12,11 +13,14 @@ const defaultValues ={
 
 
 const Tasks: FC = () => {
-    const[input, setInputs] = useState(defaultValues)
+    const[input, setInputs] = useState(defaultValues);
+    let history = useHistory();
+
     const handleSubmit = (e:FormEvent) => {
         e.preventDefault();
         console.log(input)
         addTasks(input)
+        setTimeout(()=> history.push("/"),500)
     }
 
     return (

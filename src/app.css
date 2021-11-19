@@ -1,0 +1,16 @@
+body{
+    background-color:lightsalmon;
+    
+}
+
+.dashboard{
+    width: 100 vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/* 
+.dashboard-cards{
+    width: 18 rem
+} */
