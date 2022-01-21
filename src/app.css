@@ -10,6 +10,10 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.footer{
+    margin-top: 20px;
+    padding-top: 15px;
+}
 /* 
 .dashboard-cards{
     width: 18 rem

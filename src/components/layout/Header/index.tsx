@@ -28,16 +28,6 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/users">Users</Link>
                             </li>
-                            <li className="nav-item dropdown">
-                                <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to="/" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</Link>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Pending Tasks</Link>
-                                    <Link className="dropdown-item" to="/">Current Tasks</Link>
-                                    <Link className="dropdown-item" to="/">Done Tasks</Link>
-                                    <div className="dropdown-divider"></div>
-                                    <Link className="dropdown-item" to="/">Separated link</Link>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
